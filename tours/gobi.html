@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,97 +8,341 @@
 
     <title>Gobi Adventure | TOURMAXXING</title>
 
+    <meta
+        name="description"
+        content="Discover the Gobi Desert in southern Mongolia, from vast desert landscapes and camel country to beautiful sunsets and star-filled night skies."
+    >
+
     <link rel="stylesheet" href="../style.css">
+
+    <style>
+        /* Gobi highlight photos */
+        .destination-card-image {
+            display: block;
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .destination-card {
+            overflow: hidden;
+        }
+
+        .destination-card-number {
+            margin-top: 20px;
+        }
+
+        @media (max-width: 650px) {
+            .destination-card-image {
+                height: 200px;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
+    <!-- NAVBAR -->
     <header class="navbar">
 
-        <div class="logo">
-            TOURMAXXING
-        </div>
+        <div class="logo">TOURMAXXING</div>
 
         <nav>
             <a href="../index.html">Home</a>
-            <a href="../index.html#tours">Tours</a>
+            <a href="../tours.html">Tours</a>
             <a href="../index.html#about">About</a>
             <a href="../index.html#contact">Contact</a>
         </nav>
 
-    </header>
-
-
-    <main class="tour-page">
-
-        <p class="small-title">GOBI DESERT</p>
-
-        <h1>Gobi Adventure</h1>
-
-        <p class="tour-page-description">
-            Explore the legendary Gobi Desert and experience
-            the incredible landscapes of southern Mongolia.
-        </p>
-
-
-        <div class="tour-details">
-
-            <div>
-                <strong>Duration</strong>
-                <p>5 Days</p>
-            </div>
-
-            <div>
-                <strong>Location</strong>
-                <p>Southern Mongolia</p>
-            </div>
-
-            <div>
-                <strong>Group Size</strong>
-                <p>2–8 People</p>
-            </div>
-
-            <div>
-                <strong>Price</strong>
-                <p>450,000₮</p>
-            </div>
-
+        <div class="language-selector">
+            <a href="gobi.html">🇬🇧 EN</a>
+            <span>/</span>
+            <a href="../ja/tours/gobi.html">🇯🇵 JP</a>
         </div>
 
+    </header>
 
-        <h2>About This Tour</h2>
+    <main>
 
-        <p>
-            This is temporary information for the TOURMAXXING
-            prototype. Real information about the tour,
-            guide, schedule, transportation and activities
-            will be added later.
-        </p>
+        <!-- HERO -->
+        <section class="destination-hero">
 
+            <img
+                class="destination-hero-image"
+                src="../images/gobi/gobi%202.jpg"
+                alt="Wide desert landscape in the Gobi region of Mongolia"
+                fetchpriority="high"
+            >
 
-        <h2>What You'll Experience</h2>
+            <div class="destination-hero-overlay"></div>
 
-        <ul>
-            <li>Gobi Desert landscapes</li>
-            <li>Temporary camel-riding experience</li>
-            <li>Temporary camping experience</li>
-            <li>Beautiful Mongolian scenery</li>
-        </ul>
+            <div class="destination-hero-content">
 
+                <span class="destination-eyebrow">
+                    SOUTHERN MONGOLIA
+                </span>
 
-        <a href="../index.html" class="back-button">
-            ← BACK TO TOURS
-        </a>
+                <h1>Gobi <span>Adventure</span></h1>
+
+                <p>
+                    Discover the vast landscapes of the Gobi Desert,
+                    travel through southern Mongolia, and experience
+                    a remarkable world of open horizons, nomadic
+                    traditions, and unforgettable nights beneath the stars.
+                </p>
+
+                <a href="#gobi-intro" class="destination-cta">
+                    DISCOVER THE GOBI
+                </a>
+
+            </div>
+
+            <div class="destination-hero-label">
+                <span>DESERT LANDSCAPES</span>
+                <span>MONGOLIA</span>
+                <span>ADVENTURE AWAITS</span>
+            </div>
+
+        </section>
+
+        <!-- QUICK FACTS -->
+        <section class="destination-facts">
+
+            <div class="destination-fact">
+                <span>DESTINATION</span>
+                <strong>Gobi Desert</strong>
+            </div>
+
+            <div class="destination-fact">
+                <span>REGION</span>
+                <strong>Southern Mongolia</strong>
+            </div>
+
+            <div class="destination-fact">
+                <span>EXPERIENCE</span>
+                <strong>Desert &amp; Nature</strong>
+            </div>
+
+            <div class="destination-fact">
+                <span>TRIP STYLE</span>
+                <strong>Adventure Tour</strong>
+            </div>
+
+        </section>
+
+        <!-- INTRODUCTION -->
+        <section class="destination-intro" id="gobi-intro">
+
+            <div class="destination-intro-grid">
+
+                <div>
+                    <p class="destination-section-label">
+                        THE GOBI DESERT
+                    </p>
+
+                    <h2>
+                        A vast landscape full of wonder.
+                    </h2>
+                </div>
+
+                <div>
+                    <p>
+                        Stretching across southern Mongolia, the Gobi
+                        is a remarkable region of open plains, rocky
+                        terrain, rugged mountains, and sweeping desert
+                        scenery. Its landscapes change dramatically
+                        from one place to another.
+                    </p>
+
+                    <p>
+                        A journey through the Gobi offers the chance
+                        to experience the quiet beauty of the
+                        countryside, learn about nomadic traditions,
+                        and see a side of Mongolia that feels a world
+                        away from busy city life.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- HIGHLIGHTS -->
+        <section class="destination-highlights">
+
+            <div class="destination-section-heading">
+
+                <p class="destination-section-label">
+                    WHAT YOU CAN DISCOVER
+                </p>
+
+                <h2>Highlights of the Gobi</h2>
+
+                <p>
+                    From striking desert scenery to traditional
+                    experiences and extraordinary night skies,
+                    discover what makes the Gobi memorable.
+                </p>
+
+            </div>
+
+            <div class="destination-card-grid">
+
+                <!-- Highlight 1 -->
+                <article class="destination-card">
+
+                    <img
+                        class="destination-card-image"
+                        src="../images/gobi/gobi%20morning.jpg"
+                        alt="Morning light across the Gobi landscape"
+                        loading="lazy"
+                    >
+
+                    <div class="destination-card-number">01</div>
+
+                    <div class="destination-card-content">
+
+                        <span>LANDSCAPE</span>
+
+                        <h3>Desert Horizons</h3>
+
+                        <p>
+                            Take in wide-open spaces, striking
+                            terrain, and beautiful changes in light
+                            and colour across the southern landscape.
+                        </p>
+
+                    </div>
+
+                </article>
+
+                <!-- Highlight 2 -->
+                <article class="destination-card">
+
+                    <img
+                        class="destination-card-image"
+                        src="../images/gobi/camel%20in%20gobi.jpg"
+                        alt="Camel in the Gobi Desert"
+                        loading="lazy"
+                    >
+
+                    <div class="destination-card-number">02</div>
+
+                    <div class="destination-card-content">
+
+                        <span>LOCAL LIFE</span>
+
+                        <h3>Camels &amp; Nomadic Traditions</h3>
+
+                        <p>
+                            Learn about the role of camels in desert
+                            life and discover traditions shaped by
+                            generations of living in Mongolia's
+                            challenging landscapes.
+                        </p>
+
+                    </div>
+
+                </article>
+
+                <!-- Highlight 3 -->
+                <article class="destination-card">
+
+                    <img
+                        class="destination-card-image"
+                        src="../images/gobi/night%20sky%20in%20gobi.jpg"
+                        alt="Star-filled night sky over the Gobi"
+                        loading="lazy"
+                    >
+
+                    <div class="destination-card-number">03</div>
+
+                    <div class="destination-card-content">
+
+                        <span>NIGHT SKY</span>
+
+                        <h3>Under a Desert Sky</h3>
+
+                        <p>
+                            As daylight fades, the open countryside
+                            offers a beautiful setting to watch the
+                            sunset and enjoy the peaceful atmosphere
+                            of a clear night.
+                        </p>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+        <!-- ITINERARY -->
+        <section class="destination-itinerary">
+
+            <p class="destination-section-label">
+                YOUR JOURNEY
+            </p>
+
+            <h2>A Gobi Experience</h2>
+
+            <p class="destination-itinerary-intro">
+                Discover southern Mongolia's landscapes, enjoy
+                scenic stops, and learn about the region's nature
+                and local culture. The exact route, duration, and
+                activities will depend on the final tour plan.
+            </p>
+
+            <div class="destination-itinerary-note">
+
+                <div class="destination-itinerary-icon">✦</div>
+
+                <div>
+                    <h3>Explore at Your Own Pace</h3>
+
+                    <p>
+                        Take photographs, admire the open desert
+                        scenery, and discover the Gobi's distinctive
+                        character. Specific destinations, activities,
+                        and overnight arrangements can be added when
+                        the tour details are confirmed.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- CONTACT -->
+        <section class="destination-contact">
+
+            <p class="destination-section-label">
+                START YOUR ADVENTURE
+            </p>
+
+            <h2>Ready to Discover the Gobi?</h2>
+
+            <p>
+                Get in touch to learn more about exploring Mongolia.
+            </p>
+
+            <a
+                href="../index.html#contact"
+                class="destination-cta"
+            >
+                CONTACT US
+            </a>
+
+        </section>
 
     </main>
 
-
+    <!-- FOOTER -->
     <footer>
-
         <p>
-            © 2026 TOURMAXXING — Temporary Website Prototype
+            © 2026 TOURMAXXING — Explore Mongolia
         </p>
-
     </footer>
 
 </body>

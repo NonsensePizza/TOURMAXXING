@@ -1,17 +1,50 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Central Mongolia | TOURMAXXING</title>
+
+    <meta
+        name="description"
+        content="Explore Central Mongolia through iconic landmarks, the Chinggis Khaan Statue, Turtle Rock, and the beautiful landscapes of the Mongolian countryside."
+    >
+
     <link rel="stylesheet" href="../style.css">
+
+    <style>
+        /* Central Mongolia highlight photos */
+        .destination-card-image {
+            display: block;
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .destination-card {
+            overflow: hidden;
+        }
+
+        .destination-card-number {
+            margin-top: 20px;
+        }
+
+        @media (max-width: 650px) {
+            .destination-card-image {
+                height: 200px;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
     <!-- NAVIGATION -->
     <nav class="navbar">
+
         <div class="logo">TOURMAXXING</div>
 
         <div class="nav-links">
@@ -22,51 +55,56 @@
         </div>
 
         <div class="language-selector">
-            <a href="../index.html" class="active">🇬🇧 EN</a>
+            <a href="steppe.html" class="active">🇬🇧 EN</a>
             <span>/</span>
             <a href="../ja/index.html">🇯🇵 JP</a>
         </div>
+
     </nav>
 
-
-    <!-- HERO -->
-    <header class="destination-hero">
-
-        <!-- Replace this image URL with your Central Mongolia photo -->
-        <img
-            class="destination-hero-image"
-            src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=2000&q=85"
-            alt="Landscape of Mongolia"
-        >
-
-        <div class="destination-hero-overlay"></div>
-
-        <div class="destination-hero-content">
-            <span class="destination-eyebrow">
-                DISCOVER MONGOLIA
-            </span>
-
-            <h1>Central <span>Mongolia</span></h1>
-
-            <p>
-                From legendary history to dramatic rock formations,
-                discover the landscapes and landmarks of central Mongolia.
-            </p>
-
-            <a href="#tour-overview" class="destination-cta">
-                EXPLORE THE TOUR ↓
-            </a>
-        </div>
-
-        <div class="destination-hero-label">
-            <span>TOURMAXXING</span>
-            <span>YOUR MONGOLIA JOURNEY</span>
-        </div>
-
-    </header>
-
-
     <main>
+
+        <!-- HERO -->
+        <header class="destination-hero">
+
+            <img
+                class="destination-hero-image"
+                src="../images/central/chinggis%20khan%20statue%20full.jpg"
+                alt="The monumental Chinggis Khaan Statue in Mongolia"
+                fetchpriority="high"
+            >
+
+            <div class="destination-hero-overlay"></div>
+
+            <div class="destination-hero-content">
+
+                <span class="destination-eyebrow">
+                    THE HEART OF MONGOLIA
+                </span>
+
+                <h1>Central <span>Mongolia</span></h1>
+
+                <p>
+                    Discover legendary history, extraordinary rock
+                    formations, and the timeless beauty of Mongolia's
+                    open landscapes. Journey into a region where
+                    culture and nature come together.
+                </p>
+
+                <a href="#tour-overview" class="destination-cta">
+                    EXPLORE CENTRAL MONGOLIA ↓
+                </a>
+
+            </div>
+
+            <div class="destination-hero-label">
+                <span>HISTORY & HERITAGE</span>
+                <span>CENTRAL MONGOLIA</span>
+                <span>YOUR NEXT ADVENTURE</span>
+            </div>
+
+        </header>
+
 
         <!-- QUICK FACTS -->
         <section class="destination-facts" id="tour-overview">
@@ -83,12 +121,12 @@
 
             <div class="destination-fact">
                 <span>DURATION</span>
-                <strong>To be confirmed</strong>
+                <strong>To Be Confirmed</strong>
             </div>
 
             <div class="destination-fact">
                 <span>PRICE</span>
-                <strong>Ask for details</strong>
+                <strong>Ask for Details</strong>
             </div>
 
         </section>
@@ -104,22 +142,27 @@
             <div class="destination-intro-grid">
 
                 <div>
-                    <h2>Discover the heart of Mongolia.</h2>
+                    <h2>
+                        Discover the heart of Mongolia.
+                    </h2>
                 </div>
 
                 <div>
                     <p>
-                        Explore some of Mongolia's best-known landmarks,
-                        where fascinating history meets wide-open landscapes.
-                        Central Mongolia offers a memorable introduction to
-                        the country's culture, scenery, and heritage.
+                        Central Mongolia offers a fascinating
+                        introduction to the country's history,
+                        landscapes, and cultural heritage. Here,
+                        monumental landmarks stand alongside
+                        rolling hills, rocky mountains, and
+                        traditional countryside.
                     </p>
 
                     <p>
-                        From the monumental Chinggis Khaan Statue to the
-                        striking Turtle Rock formations in Terelj,
-                        this journey brings together iconic sights and
-                        the spirit of the Mongolian countryside.
+                        From the impressive Chinggis Khaan Statue
+                        to the distinctive silhouette of Turtle
+                        Rock in Gorkhi-Terelj National Park,
+                        discover places that showcase the
+                        character and beauty of Mongolia.
                     </p>
                 </div>
 
@@ -132,6 +175,7 @@
         <section class="destination-highlights">
 
             <div class="destination-section-heading">
+
                 <div class="destination-section-label">
                     02 — PLACES TO DISCOVER
                 </div>
@@ -139,60 +183,107 @@
                 <h2>Landmarks worth the journey.</h2>
 
                 <p>
-                    Explore the highlights planned for this tour.
-                    The final route and activities will be confirmed
-                    with the tour organizers.
+                    Explore remarkable landmarks and landscapes
+                    that make Central Mongolia an unforgettable
+                    destination. Final tour stops will be
+                    confirmed when the itinerary is ready.
                 </p>
+
             </div>
 
 
             <div class="destination-card-grid">
 
+                <!-- HIGHLIGHT 1 -->
                 <article class="destination-card">
+
+                    <img
+                        class="destination-card-image"
+                        src="../images/central/chinggis%20khan%20statue%20front.jpg"
+                        alt="Front view of the Chinggis Khaan Statue"
+                        loading="lazy"
+                    >
+
                     <div class="destination-card-number">01</div>
 
                     <div class="destination-card-content">
+
                         <span>HISTORY & HERITAGE</span>
+
                         <h3>Chinggis Khaan Statue</h3>
 
                         <p>
-                            Visit the enormous equestrian statue honoring
-                            Chinggis Khaan, one of Mongolia's most
-                            recognizable landmarks.
+                            Encounter the monumental equestrian
+                            statue honoring Chinggis Khaan.
+                            This iconic landmark celebrates
+                            Mongolia's history and offers an
+                            unforgettable sight.
                         </p>
+
                     </div>
+
                 </article>
 
 
+                <!-- HIGHLIGHT 2 -->
                 <article class="destination-card">
+
+                    <img
+                        class="destination-card-image"
+                        src="../images/central/turtle%20rock.jpg"
+                        alt="The distinctive Turtle Rock formation in Terelj"
+                        loading="lazy"
+                    >
+
                     <div class="destination-card-number">02</div>
 
                     <div class="destination-card-content">
+
                         <span>NATURE & LANDSCAPE</span>
+
                         <h3>Turtle Rock</h3>
 
                         <p>
-                            Discover the distinctive rock formation
-                            surrounded by the rugged scenery of
-                            Gorkhi-Terelj National Park.
+                            Discover one of Mongolia's most
+                            recognizable natural formations,
+                            surrounded by rugged rock faces,
+                            green hills, and the open scenery
+                            of Gorkhi-Terelj National Park.
                         </p>
+
                     </div>
+
                 </article>
 
 
+                <!-- HIGHLIGHT 3 -->
                 <article class="destination-card">
+
+                    <img
+                        class="destination-card-image"
+                        src="../images/central/sukhbaatar%20square%20chinggis.jpg"
+                        alt="Chinggis Khaan monument at Sukhbaatar Square in Ulaanbaatar"
+                        loading="lazy"
+                    >
+
                     <div class="destination-card-number">03</div>
 
                     <div class="destination-card-content">
-                        <span>YOUR JOURNEY</span>
-                        <h3>More to Explore</h3>
+
+                        <span>CULTURE & CITY LIFE</span>
+
+                        <h3>Sukhbaatar Square</h3>
 
                         <p>
-                            Additional stops, activities, and experiences
-                            will be added when the final tour itinerary
-                            becomes available.
+                            Discover the heart of Ulaanbaatar,
+                            where the central square and its
+                            imposing monument provide a glimpse
+                            into Mongolia's national identity
+                            and modern capital.
                         </p>
+
                     </div>
+
                 </article>
 
             </div>
@@ -210,21 +301,29 @@
             <h2>Your adventure, day by day.</h2>
 
             <p class="destination-itinerary-intro">
-                The detailed schedule is still being prepared.
-                Check back for confirmed daily activities, travel times,
-                and accommodation information.
+                Your journey may combine historic landmarks,
+                scenic countryside, and distinctive natural
+                formations. The final schedule, travel times,
+                accommodation, and activities will be added
+                once the tour plan is confirmed.
             </p>
 
             <div class="destination-itinerary-note">
+
                 <div class="destination-itinerary-icon">✦</div>
 
                 <div>
-                    <h3>Itinerary coming soon</h3>
+                    <h3>Your Mongolia Story Starts Here</h3>
+
                     <p>
-                        The tour team will provide the confirmed itinerary.
-                        We will add it here once the details are available.
+                        Whether you're drawn to Mongolia's
+                        fascinating history or its wide-open
+                        landscapes, Central Mongolia offers
+                        plenty to discover. Check back for
+                        the confirmed itinerary and tour details.
                     </p>
                 </div>
+
             </div>
 
         </section>
@@ -237,14 +336,18 @@
                 YOUR NEXT ADVENTURE STARTS HERE
             </span>
 
-            <h2>Ready to discover Mongolia?</h2>
+            <h2>Ready to Discover Central Mongolia?</h2>
 
             <p>
-                Interested in this tour? Get in touch with us
-                for availability and updated tour information.
+                Interested in exploring Mongolia's landmarks
+                and countryside? Get in touch for tour updates
+                and availability.
             </p>
 
-            <a href="../index.html#contact" class="destination-cta">
+            <a
+                href="../index.html#contact"
+                class="destination-cta"
+            >
                 CONTACT US →
             </a>
 
@@ -255,8 +358,11 @@
 
     <!-- FOOTER -->
     <footer class="footer">
-        <p>© 2026 TOURMAXXING — Temporary Website Prototype</p>
+        <p>
+            © 2026 TOURMAXXING — Temporary Website Prototype
+        </p>
     </footer>
 
 </body>
+
 </html>

@@ -1,17 +1,50 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Northern Mongolia | TOURMAXXING</title>
+
+    <meta
+        name="description"
+        content="Explore Northern Mongolia, from the clear waters of Lake Khuvsgul to forested mountains, peaceful valleys, and distinctive northern traditions."
+    >
+
     <link rel="stylesheet" href="../style.css">
+
+    <style>
+        /* Northern Mongolia highlight photos */
+        .destination-card-image {
+            display: block;
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .destination-card {
+            overflow: hidden;
+        }
+
+        .destination-card-number {
+            margin-top: 20px;
+        }
+
+        @media (max-width: 650px) {
+            .destination-card-image {
+                height: 200px;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
     <!-- NAVIGATION -->
     <nav class="navbar">
+
         <div class="logo">TOURMAXXING</div>
 
         <div class="nav-links">
@@ -22,49 +55,57 @@
         </div>
 
         <div class="language-selector">
-            <a href="../index.html" class="active">🇬🇧 EN</a>
+            <a href="mountain.html" class="active">🇬🇧 EN</a>
             <span>/</span>
             <a href="../ja/index.html">🇯🇵 JP</a>
         </div>
+
     </nav>
 
-    <!-- HERO -->
-    <header class="destination-hero">
-
-        <img
-            class="destination-hero-image"
-            src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=2000&q=85"
-            alt="Mountain lake landscape of Northern Mongolia"
-        >
-
-        <div class="destination-hero-overlay"></div>
-
-        <div class="destination-hero-content">
-            <span class="destination-eyebrow">
-                DISCOVER MONGOLIA
-            </span>
-
-            <h1>Northern <span>Mongolia</span></h1>
-
-            <p>
-                Discover crystal-clear lakes, peaceful forests,
-                mountain scenery, and the natural beauty of
-                northern Mongolia.
-            </p>
-
-            <a href="#tour-overview" class="destination-cta">
-                EXPLORE THE TOUR ↓
-            </a>
-        </div>
-
-        <div class="destination-hero-label">
-            <span>TOURMAXXING</span>
-            <span>YOUR MONGOLIA JOURNEY</span>
-        </div>
-
-    </header>
 
     <main>
+
+        <!-- HERO -->
+        <header class="destination-hero">
+
+            <img
+                class="destination-hero-image"
+                src="../images/northern/khuvsgul%20lake.jpg"
+                alt="Lake Khuvsgul surrounded by the northern Mongolian landscape"
+                fetchpriority="high"
+            >
+
+            <div class="destination-hero-overlay"></div>
+
+            <div class="destination-hero-content">
+
+                <span class="destination-eyebrow">
+                    THE WILD NORTH
+                </span>
+
+                <h1>Northern <span>Mongolia</span></h1>
+
+                <p>
+                    Escape into a world of crystal-clear lakes,
+                    forested mountains, and peaceful wilderness.
+                    Discover a quieter, greener side of Mongolia
+                    where nature takes center stage.
+                </p>
+
+                <a href="#tour-overview" class="destination-cta">
+                    EXPLORE THE NORTH ↓
+                </a>
+
+            </div>
+
+            <div class="destination-hero-label">
+                <span>LAKES & FORESTS</span>
+                <span>NORTHERN MONGOLIA</span>
+                <span>WILDERNESS AWAITS</span>
+            </div>
+
+        </header>
+
 
         <!-- QUICK FACTS -->
         <section class="destination-facts" id="tour-overview">
@@ -76,20 +117,21 @@
 
             <div class="destination-fact">
                 <span>HIGHLIGHTS</span>
-                <strong>Lakes & Forests</strong>
+                <strong>Lakes & Wilderness</strong>
             </div>
 
             <div class="destination-fact">
                 <span>DURATION</span>
-                <strong>To be confirmed</strong>
+                <strong>To Be Confirmed</strong>
             </div>
 
             <div class="destination-fact">
                 <span>PRICE</span>
-                <strong>Ask for details</strong>
+                <strong>Ask for Details</strong>
             </div>
 
         </section>
+
 
         <!-- INTRODUCTION -->
         <section class="destination-intro">
@@ -101,97 +143,156 @@
             <div class="destination-intro-grid">
 
                 <div>
-                    <h2>Discover the beauty of the north.</h2>
+                    <h2>
+                        Find your escape in the wild north.
+                    </h2>
                 </div>
 
                 <div>
                     <p>
-                        Northern Mongolia is known for its beautiful
-                        lakes, expansive forests, green valleys, and
-                        peaceful mountain landscapes. It offers a
-                        memorable experience for travelers who want
-                        to explore Mongolia's natural beauty.
+                        Northern Mongolia is a land of deep-blue
+                        lakes, forest-covered mountains, green
+                        valleys, and vast stretches of wilderness.
+                        Its landscapes offer a striking contrast
+                        to the desert scenery of the south.
                     </p>
 
                     <p>
-                        From the clear waters of Lake Khuvsgul to the
-                        remote northern wilderness, discover a different
-                        side of Mongolia and experience the quiet
-                        atmosphere of its remarkable landscapes.
+                        From the remarkable shores of Lake Khuvsgul
+                        to the remote forests and traditional
+                        communities of the northern taiga, this
+                        region invites travelers to slow down,
+                        reconnect with nature, and discover
+                        another side of Mongolia.
                     </p>
                 </div>
 
             </div>
 
         </section>
+
 
         <!-- DESTINATION HIGHLIGHTS -->
         <section class="destination-highlights">
 
             <div class="destination-section-heading">
+
                 <div class="destination-section-label">
                     02 — PLACES TO DISCOVER
                 </div>
 
-                <h2>Explore the wonders of the north.</h2>
+                <h2>Where nature takes the spotlight.</h2>
 
                 <p>
-                    Discover some of the region's best-known natural
-                    and cultural highlights. The final route and
-                    activities will be confirmed with the tour organizers.
+                    Discover the lakes, landscapes, and cultural
+                    traditions that make northern Mongolia
+                    unforgettable. Final stops and activities
+                    will depend on the confirmed tour itinerary.
                 </p>
+
             </div>
+
 
             <div class="destination-card-grid">
 
+                <!-- HIGHLIGHT 1 -->
                 <article class="destination-card">
+
+                    <img
+                        class="destination-card-image"
+                        src="../images/northern/khuvsgul.jpg"
+                        alt="Scenery around Lake Khuvsgul in northern Mongolia"
+                        loading="lazy"
+                    >
+
                     <div class="destination-card-number">01</div>
 
                     <div class="destination-card-content">
+
                         <span>LAKES & NATURE</span>
+
                         <h3>Lake Khuvsgul</h3>
 
                         <p>
-                            Visit the beautiful Lake Khuvsgul, known
-                            for its clear freshwater, forested shores,
-                            and surrounding mountain scenery.
+                            Discover one of Mongolia's most
+                            celebrated lakes, known for its
+                            remarkably clear freshwater, mountain
+                            surroundings, and forested shores.
+                            A beautiful destination for nature
+                            lovers and photographers.
                         </p>
+
                     </div>
+
                 </article>
 
+
+                <!-- HIGHLIGHT 2 -->
                 <article class="destination-card">
+
+                    <img
+                        class="destination-card-image"
+                        src="../images/northern/steppe.jpg"
+                        alt="Open green landscapes in northern Mongolia"
+                        loading="lazy"
+                    >
+
                     <div class="destination-card-number">02</div>
 
                     <div class="destination-card-content">
-                        <span>FORESTS & LANDSCAPE</span>
-                        <h3>Northern Wilderness</h3>
+
+                        <span>FORESTS & LANDSCAPES</span>
+
+                        <h3>The Northern Wilderness</h3>
 
                         <p>
-                            Experience the peaceful forests, open
-                            valleys, and dramatic natural scenery
-                            that make northern Mongolia special.
+                            Experience the peaceful beauty of
+                            open valleys, rolling landscapes,
+                            and distant mountains. The north
+                            offers a refreshing escape into
+                            Mongolia's great outdoors.
                         </p>
+
                     </div>
+
                 </article>
 
+
+                <!-- HIGHLIGHT 3 -->
                 <article class="destination-card">
+
+                    <img
+                        class="destination-card-image"
+                        src="../images/northern/tsaatan.jpg"
+                        alt="Tsaatan reindeer-herding culture in northern Mongolia"
+                        loading="lazy"
+                    >
+
                     <div class="destination-card-number">03</div>
 
                     <div class="destination-card-content">
+
                         <span>CULTURE & TRADITION</span>
-                        <h3>Local Heritage</h3>
+
+                        <h3>Tsaatan Heritage</h3>
 
                         <p>
-                            Learn about the traditions and lifestyles
-                            of northern communities, depending on
-                            the final tour route and available visits.
+                            Learn about the distinctive
+                            reindeer-herding traditions of
+                            northern Mongolia's Tsaatan
+                            communities. Visits depend on the
+                            final route and arrangements with
+                            local communities.
                         </p>
+
                     </div>
+
                 </article>
 
             </div>
 
         </section>
+
 
         <!-- ITINERARY -->
         <section class="destination-itinerary">
@@ -203,25 +304,33 @@
             <h2>Your adventure, day by day.</h2>
 
             <p class="destination-itinerary-intro">
-                The detailed schedule is still being prepared.
-                Check back for confirmed daily activities, travel times,
-                and accommodation information.
+                Your northern journey may include scenic lake
+                views, countryside exploration, and opportunities
+                to learn about local culture. The final schedule,
+                travel times, accommodation, and activities will
+                be published once the tour plan is confirmed.
             </p>
 
             <div class="destination-itinerary-note">
+
                 <div class="destination-itinerary-icon">✦</div>
 
                 <div>
-                    <h3>Itinerary coming soon</h3>
+                    <h3>A Journey Into the Wild</h3>
 
                     <p>
-                        The tour team will provide the confirmed itinerary.
-                        We will add it here once the details are available.
+                        Prepare to discover peaceful landscapes,
+                        remarkable natural scenery, and the
+                        cultural richness of Mongolia's north.
+                        Check back for confirmed itinerary details
+                        as the tour takes shape.
                     </p>
                 </div>
+
             </div>
 
         </section>
+
 
         <!-- CONTACT CTA -->
         <section class="destination-contact">
@@ -230,14 +339,18 @@
                 YOUR NEXT ADVENTURE STARTS HERE
             </span>
 
-            <h2>Ready to discover Northern Mongolia?</h2>
+            <h2>Ready to Explore the Wild North?</h2>
 
             <p>
-                Interested in this tour? Get in touch with us
-                for availability and updated tour information.
+                Interested in northern Mongolia's lakes,
+                landscapes, and culture? Get in touch for
+                tour updates and availability.
             </p>
 
-            <a href="../index.html#contact" class="destination-cta">
+            <a
+                href="../index.html#contact"
+                class="destination-cta"
+            >
                 CONTACT US →
             </a>
 
@@ -245,10 +358,14 @@
 
     </main>
 
+
     <!-- FOOTER -->
     <footer class="footer">
-        <p>© 2026 TOURMAXXING — Temporary Website Prototype</p>
+        <p>
+            © 2026 TOURMAXXING — Temporary Website Prototype
+        </p>
     </footer>
 
 </body>
+
 </html>
