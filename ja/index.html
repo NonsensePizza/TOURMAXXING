@@ -1,6 +1,6 @@
+
 <!DOCTYPE html>
 <html lang="ja">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +8,107 @@
     <title>TOURMAXXING | モンゴル旅行</title>
 
     <link rel="stylesheet" href="../style.css">
+
+    <style>
+        /* Japanese page: display Japanese text */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, "Noto Sans JP", "Yu Gothic", Meiryo, sans-serif;
+        }
+
+        .language-selector {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-left: 25px;
+            white-space: nowrap;
+        }
+
+        .language-selector a {
+            color: white;
+            text-decoration: none;
+            font-size: 13px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            transition: 0.2s;
+        }
+
+        .language-selector a:hover,
+        .language-selector .active {
+            color: #d8b36a;
+        }
+
+        .language-selector span {
+            color: rgba(255, 255, 255, 0.45);
+        }
+
+        .tour-container {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 28px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .tour-card {
+            min-width: 0;
+            overflow: hidden;
+            border-radius: 8px;
+        }
+
+        .tour-card img {
+            display: block;
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+        }
+
+        .tour-info {
+            padding: 24px;
+        }
+
+        .tour-info h3 {
+            margin: 10px 0;
+        }
+
+        .tour-info p {
+            line-height: 1.8;
+        }
+
+        .view-all-tours {
+            text-align: center;
+            padding: 30px 20px 50px;
+        }
+
+        .view-all-tours a {
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        @media (max-width: 650px) {
+            .language-selector {
+                margin-left: 0;
+                gap: 5px;
+            }
+
+            .language-selector a {
+                font-size: 12px;
+            }
+
+            .tour-container {
+                grid-template-columns: 1fr;
+                padding: 15px;
+            }
+
+            .tour-card img {
+                height: 230px;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -15,18 +116,15 @@
     <!-- Navigation -->
     <header class="navbar">
 
-        <div class="logo">
-            TOURMAXXING
-        </div>
+        <div class="logo">TOURMAXXING</div>
 
         <nav>
-            <a href="index.html">ホーム</a>
-            <a href="../tours.html">ツアー</a>
-            <a href="index.html#about">私たちについて</a>
-            <a href="index.html#contact">お問い合わせ</a>
+            <a href="#home">ホーム</a>
+            <a href="#tours">ツアー</a>
+            <a href="#about">私たちについて</a>
+            <a href="#contact">お問い合わせ</a>
         </nav>
 
-        <!-- Language -->
         <div class="language-selector">
             <a href="../index.html">🇬🇧 EN</a>
             <span>/</span>
@@ -35,15 +133,11 @@
 
     </header>
 
-
     <!-- Hero -->
     <section id="home" class="hero">
-
         <div class="hero-content">
 
-            <p class="small-title">
-                冒険を始めよう
-            </p>
+            <p class="small-title">冒険を始めよう</p>
 
             <h1>
                 モンゴルを<br>
@@ -60,161 +154,148 @@
             </a>
 
         </div>
-
     </section>
-
 
     <!-- Tours -->
     <section id="tours">
 
         <div class="section-heading">
+            <p class="small-title">冒険を始めよう</p>
 
-            <p class="small-title">
-                冒険を始めよう
-            </p>
-
-            <h2>
-                おすすめツアー
-            </h2>
+            <h2>おすすめツアー</h2>
 
             <p>
-                モンゴルの魅力を体験できる
-                おすすめツアーをご紹介します。
+                モンゴル各地の魅力的な目的地を巡り、
+                忘れられない旅を体験しましょう。
             </p>
-
         </div>
-
 
         <div class="tour-container">
 
-
-            <!-- Gobi -->
+            <!-- 1. Gobi -->
             <div class="tour-card">
 
                 <img
-                    src="https://upload.wikimedia.org/wikipedia/commons/7/79/Gobi_Desert.jpg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original"
-                    alt="モンゴルの風景"
+                    src="https://images.unsplash.com/photo-1509316785289-025f5b846b35?auto=format&fit=crop&w=1200&q=85"
+                    alt="ゴビ砂漠"
+                    loading="lazy"
                 >
 
                 <div class="tour-info">
+                    <span class="tour-location">ゴビ砂漠</span>
 
-                    <span class="tour-location">
-                        ゴビ砂漠
-                    </span>
-
-                    <h3>
-                        ゴビ・アドベンチャー
-                    </h3>
+                    <h3>ゴビ・アドベンチャー</h3>
 
                     <p>
                         伝説的なゴビ砂漠を探索し、
-                        モンゴル南部の美しい景色を発見します。
+                        モンゴル南部の壮大な景色や
+                        美しい自然を発見しましょう。
                     </p>
 
-                    <a
-                        href="../tours/gobi.html"
-                        class="tour-button"
-                    >
+                    <a href="../tours/gobi.html" class="tour-button">
                         ツアーを見る
                     </a>
-
                 </div>
 
             </div>
 
-
-            <!-- Steppe -->
+            <!-- 2. Central Mongolia -->
             <div class="tour-card">
 
                 <img
                     src="https://cdn.britannica.com/37/147337-050-C9A6C53A/Kazakh-camp-Mongolia.jpg"
-                    alt="モンゴルの草原"
+                    alt="モンゴル中央部の草原"
+                    loading="lazy"
                 >
 
                 <div class="tour-info">
+                    <span class="tour-location">モンゴルの草原</span>
 
-                    <span class="tour-location">
-                        モンゴルの草原
-                    </span>
-
-                    <h3>
-                        ステップ・エクスプローラー
-                    </h3>
+                    <h3>モンゴル中央部</h3>
 
                     <p>
-                        果てしなく広がるモンゴルの草原を旅し、
-                        美しい自然を体験します。
+                        果てしなく広がる草原を旅し、
+                        遊牧民の文化に触れながら、
+                        モンゴルの魅力を発見しましょう。
                     </p>
 
-                    <a
-                        href="../tours/steppe.html"
-                        class="tour-button"
-                    >
+                    <a href="../tours/steppe.html" class="tour-button">
                         ツアーを見る
                     </a>
-
                 </div>
 
             </div>
 
-
-            <!-- Mountain -->
+            <!-- 3. Northern Mongolia -->
             <div class="tour-card">
 
                 <img
-                    src="https://tourmongolia.com/wp-content/uploads/2018/02/mountains.jpg"
-                    alt="モンゴルの山"
+                    src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1200&q=85"
+                    alt="モンゴル北部の山と湖"
+                    loading="lazy"
                 >
 
                 <div class="tour-info">
+                    <span class="tour-location">湖と森</span>
 
-                    <span class="tour-location">
-                        山岳地帯
-                    </span>
-
-                    <h3>
-                        マウンテン・エスケープ
-                    </h3>
+                    <h3>モンゴル北部</h3>
 
                     <p>
-                        美しい山々へ向かい、
-                        モンゴルの自然を楽しみましょう。
+                        静かな湖、緑豊かな森、
+                        そしてモンゴル北部の美しい大自然を
+                        発見しましょう。
                     </p>
 
-                    <a
-                        href="../tours/mountain.html"
-                        class="tour-button"
-                    >
+                    <a href="../tours/mountain.html" class="tour-button">
                         ツアーを見る
                     </a>
+                </div>
 
+            </div>
+
+            <!-- 4. Western Mongolia -->
+            <div class="tour-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=85"
+                    alt="モンゴル西部の山々"
+                    loading="lazy"
+                >
+
+                <div class="tour-info">
+                    <span class="tour-location">アルタイ山脈</span>
+
+                    <h3>モンゴル西部</h3>
+
+                    <p>
+                        壮大なアルタイ山脈、高山湖、
+                        そしてモンゴル西部の独特な文化を
+                        体験しましょう。
+                    </p>
+
+                    <a href="../tours/west.html" class="tour-button">
+                        ツアーを見る
+                    </a>
                 </div>
 
             </div>
 
         </div>
 
-
-        <!-- All Tours -->
         <div class="view-all-tours">
-
             <a href="../tours.html">
                 すべてのツアーを見る →
             </a>
-
         </div>
 
     </section>
-
 
     <!-- About -->
     <section id="about" class="about-section">
 
         <div class="about-content">
 
-            <p class="small-title">
-                TOURMAXXINGについて
-            </p>
+            <p class="small-title">TOURMAXXINGについて</p>
 
             <h2>
                 冒険は<br>
@@ -222,73 +303,51 @@
             </h2>
 
             <p>
-                TOURMAXXINGは、
-                モンゴル各地のツアーや冒険を紹介する
-                旅行ウェブサイトです。
+                TOURMAXXINGは、モンゴル各地のツアーや
+                冒険を紹介する旅行ウェブサイトです。
             </p>
 
             <p>
-                ガイド、目的地、体験、
-                旅行プランなどの詳しい情報は
-                順次追加されます。
+                モンゴルの美しい自然、伝統文化、
+                そして特別な旅行体験を発見しましょう。
             </p>
 
         </div>
 
     </section>
-
 
     <!-- Contact -->
     <section id="contact" class="contact-section">
 
         <div class="section-heading">
 
-            <p class="small-title">
-                お問い合わせ
-            </p>
+            <p class="small-title">お問い合わせ</p>
 
-            <h2>
-                お問い合わせ
-            </h2>
+            <h2>お問い合わせ</h2>
 
             <p>
-                ツアーについて詳しく知りたい方は
+                ツアーについて詳しく知りたい方は、
                 お気軽にお問い合わせください。
             </p>
 
         </div>
 
-
         <div class="contact-box">
 
-            <p>
-                📧 example@tourmaxxing.com
-            </p>
+            <p>📧 example@tourmaxxing.com</p>
 
-            <p>
-                📞 +976 1234 5678
-            </p>
+            <p>📞 +976 1234 5678</p>
 
-            <p>
-                📍 ウランバートル、モンゴル
-            </p>
+            <p>📍 ウランバートル、モンゴル</p>
 
         </div>
 
     </section>
 
-
     <!-- Footer -->
     <footer>
-
-        <p>
-            © 2026 TOURMAXXING — Travel Website
-        </p>
-
+        <p>© 2026 TOURMAXXING — モンゴル旅行</p>
     </footer>
-
-
-    <script src="../script.js"></script>
 
 </body>
 </html>
