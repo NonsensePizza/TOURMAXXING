@@ -1,15 +1,324 @@
+
 <!DOCTYPE html>
-<html lang="ja"><head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ツアー一覧 | TOURMAXXING</title><link rel="stylesheet" href="../style.css">
-</head><body>
-<nav class="navbar"><a class="logo" href="index.html">TOURMAXXING</a>
-<div class="nav-links"><a href="index.html">ホーム</a><a href="tours.html" class="active">ツアー</a><a href="index.html#about">私たちについて</a><a href="index.html#contact">お問い合わせ</a></div>
-<div class="language-selector"><a href="../tours.html">🇬🇧 EN</a><span>/</span><a href="tours.html" class="active">🇯🇵 JP</a></div></nav>
-<main class="tours-page"><section class="section-heading"><span class="small-title">モンゴルを発見しよう</span><h1>ツアー一覧</h1><p>モンゴルの自然、文化、忘れられない冒険を体験しましょう。</p></section>
-<section class="tour-container">
-<article class="tour-card"><img src="https://upload.wikimedia.org/wikipedia/commons/7/79/Gobi_Desert.jpg" alt="ゴビ砂漠"><div class="tour-info"><span class="tour-location">南モンゴル</span><h2>ゴビ砂漠の冒険</h2><p>広大な砂漠と美しい砂丘を探索する旅。</p><div class="tour-bottom"><span class="tour-duration">5日間</span><strong class="tour-price">450,000₮</strong></div><a class="tour-button" href="tours/gobi.html">詳細を見る →</a></div></article>
-<article class="tour-card"><img src="https://cdn.britannica.com/37/147337-050-C9A6C53A/Kazakh-camp-Mongolia.jpg" alt="モンゴルの草原"><div class="tour-info"><span class="tour-location">モンゴルの草原</span><h2>草原の旅</h2><p>広大な草原と遊牧民の文化を体験。</p><div class="tour-bottom"><span class="tour-duration">4日間</span><strong class="tour-price">380,000₮</strong></div><a class="tour-button" href="tours/steppe.html">詳細を見る →</a></div></article>
-<article class="tour-card"><img src="https://tourmongolia.com/wp-content/uploads/2018/02/mountains.jpg" alt="モンゴルの山々"><div class="tour-info"><span class="tour-location">山岳地帯</span><h2>山岳アドベンチャー</h2><p>モンゴルの山々と自然を楽しむ旅。</p><div class="tour-bottom"><span class="tour-duration">3日間</span><strong class="tour-price">300,000₮</strong></div><a class="tour-button" href="tours/mountain.html">詳細を見る →</a></div></article>
-<article class="tour-card"><img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80" alt="西モンゴルの山々"><div class="tour-info"><span class="tour-location">西モンゴル</span><h2>西モンゴルの冒険</h2><p>雄大な山々と西モンゴルの自然を探検。</p><div class="tour-bottom"><span class="tour-duration">6日間</span><strong class="tour-price">520,000₮</strong></div><a class="tour-button" href="tours/west.html">詳細を見る →</a></div></article>
-</section></main><footer class="footer"><p>© 2026 TOURMAXXING — モンゴル旅行</p></footer></body></html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ツアー一覧 | TOURMAXXING</title>
+
+    <meta
+        name="description"
+        content="ゴビ砂漠、モンゴル中央部、北部、西部。モンゴル各地の自然や文化を発見する旅へ出かけましょう。"
+    >
+
+    <link rel="stylesheet" href="../style.css">
+
+    <style>
+        body {
+            font-family: Arial, "Noto Sans JP", "Yu Gothic", Meiryo, sans-serif;
+        }
+
+        .language-selector {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-left: 25px;
+            white-space: nowrap;
+        }
+
+        .language-selector a {
+            color: white;
+            text-decoration: none;
+            font-size: 13px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            transition: 0.2s;
+        }
+
+        .language-selector a:hover,
+        .language-selector .active {
+            color: #d8b36a;
+        }
+
+        .language-selector span {
+            color: rgba(255, 255, 255, 0.45);
+        }
+
+        .tours-page {
+            padding-top: 120px;
+            padding-bottom: 50px;
+        }
+
+        .tours-page .section-heading {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .tour-container {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 28px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .tour-card {
+            min-width: 0;
+            overflow: hidden;
+            border-radius: 8px;
+        }
+
+        .tour-card img {
+            display: block;
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+        }
+
+        .tour-info {
+            padding: 24px;
+        }
+
+        .tour-info h2 {
+            margin: 10px 0;
+        }
+
+        .tour-info p {
+            line-height: 1.9;
+        }
+
+        .tour-bottom {
+            margin: 20px 0;
+        }
+
+        .tour-button {
+            display: block;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        .view-all-tours {
+            text-align: center;
+            padding: 30px 20px 50px;
+        }
+
+        .view-all-tours a {
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        @media (max-width: 650px) {
+            .language-selector {
+                margin-left: 0;
+                gap: 5px;
+            }
+
+            .language-selector a {
+                font-size: 12px;
+            }
+
+            .tour-container {
+                grid-template-columns: 1fr;
+                padding: 15px;
+            }
+
+            .tour-card img {
+                height: 230px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <nav class="navbar">
+
+        <a class="logo" href="index.html">TOURMAXXING</a>
+
+        <div class="nav-links">
+            <a href="index.html">ホーム</a>
+            <a href="tours.html" class="active">ツアー</a>
+            <a href="index.html#about">私たちについて</a>
+            <a href="index.html#contact">お問い合わせ</a>
+        </div>
+
+        <div class="language-selector">
+            <a href="../tours.html">🇬🇧 EN</a>
+            <span>/</span>
+            <a href="tours.html" class="active">🇯🇵 JP</a>
+        </div>
+
+    </nav>
+
+
+    <!-- TOURS INTRODUCTION -->
+    <main class="tours-page">
+
+        <section class="section-heading">
+
+            <span class="small-title">モンゴルを発見しよう</span>
+
+            <h1>あなたの次の冒険へ</h1>
+
+            <p>
+                広大な砂漠から美しい湖や山々まで。
+                モンゴル各地の自然、歴史、文化に触れる
+                特別な旅を見つけましょう。
+            </p>
+
+        </section>
+
+
+        <!-- DESTINATION CARDS -->
+        <section class="tour-container">
+
+            <!-- GOBI DESERT -->
+            <article class="tour-card">
+
+                <img
+                    src="../images/gobi/gobi.jpg"
+                    alt="モンゴル南部のゴビ砂漠"
+                    loading="lazy"
+                >
+
+                <div class="tour-info">
+
+                    <span class="tour-location">モンゴル南部</span>
+
+                    <h2>ゴビ砂漠の冒険</h2>
+
+                    <p>
+                        広大な砂漠の風景、ラクダ、遊牧民の暮らし。
+                        モンゴル南部ならではの壮大な自然と
+                        砂漠の魅力を発見しましょう。
+                    </p>
+
+                    <a class="tour-button" href="tours/gobi.html">
+                        旅の詳細を見る →
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- CENTRAL MONGOLIA -->
+            <article class="tour-card">
+
+                <img
+                    src="../images/central/chinggis%20khan%20statue%20full.jpg"
+                    alt="モンゴルのチンギス・ハーン騎馬像"
+                    loading="lazy"
+                >
+
+                <div class="tour-info">
+
+                    <span class="tour-location">歴史と文化</span>
+
+                    <h2>モンゴル中央部</h2>
+
+                    <p>
+                        チンギス・ハーン騎馬像や亀石などの名所を訪れ、
+                        モンゴルの歴史と美しい自然が織りなす
+                        景色を楽しみましょう。
+                    </p>
+
+                    <a class="tour-button" href="tours/steppe.html">
+                        旅の詳細を見る →
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- NORTHERN MONGOLIA -->
+            <article class="tour-card">
+
+                <img
+                    src="../images/northern/khuvsgul%20lake.jpg"
+                    alt="モンゴル北部のフブスグル湖"
+                    loading="lazy"
+                >
+
+                <div class="tour-info">
+
+                    <span class="tour-location">湖と大自然</span>
+
+                    <h2>モンゴル北部</h2>
+
+                    <p>
+                        澄みきった湖、緑豊かな森、山々に囲まれた風景。
+                        モンゴル北部の静かで美しい大自然を
+                        心ゆくまで満喫しましょう。
+                    </p>
+
+                    <a class="tour-button" href="tours/mountain.html">
+                        旅の詳細を見る →
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- WESTERN MONGOLIA -->
+            <article class="tour-card">
+
+                <img
+                    src="../images/west/land.jpg"
+                    alt="モンゴル西部の広大な自然"
+                    loading="lazy"
+                >
+
+                <div class="tour-info">
+
+                    <span class="tour-location">山岳と大自然</span>
+
+                    <h2>モンゴル西部</h2>
+
+                    <p>
+                        壮大な山々、渓谷、そして地域独自の文化。
+                        モンゴル西部ならではの自然と
+                        魅力あふれる風景を発見しましょう。
+                    </p>
+
+                    <a class="tour-button" href="tours/west.html">
+                        旅の詳細を見る →
+                    </a>
+
+                </div>
+
+            </article>
+
+        </section>
+
+
+        <!-- BACK TO HOME -->
+        <div class="view-all-tours">
+
+            <a href="index.html">
+                ホームに戻る →
+            </a>
+
+        </div>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <p>
+            © 2026 TOURMAXXING — モンゴル旅行
+        </p>
+
+    </footer>
+
+</body>
+
+</html>

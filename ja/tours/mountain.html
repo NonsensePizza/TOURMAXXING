@@ -1,12 +1,281 @@
+```html
 <!DOCTYPE html>
-<html lang="ja"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>山岳アドベンチャー | TOURMAXXING</title><link rel="stylesheet" href="../../style.css"></head>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>モンゴル北部の旅 | TOURMAXXING</title>
+    <link rel="stylesheet" href="../../style.css">
+
+    <style>
+        .language-selector {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-left: 25px;
+            white-space: nowrap;
+        }
+
+        .language-selector a {
+            color: white;
+            text-decoration: none;
+            font-size: 13px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            transition: color 0.3s ease;
+        }
+
+        .language-selector a:hover,
+        .language-selector a.active {
+            color: #d8b36a;
+        }
+
+        .language-selector span {
+            color: rgba(255, 255, 255, 0.5);
+        }
+
+        .destination-card {
+            overflow: hidden;
+        }
+
+        .destination-card-image {
+            display: block;
+            width: 100%;
+            height: 230px;
+            object-fit: cover;
+        }
+
+        @media (max-width: 650px) {
+            .language-selector {
+                margin-left: 0;
+            }
+
+            .destination-card-image {
+                height: 200px;
+            }
+        }
+    </style>
+</head>
+
 <body>
-<nav class="navbar"><div class="logo"><a href="../index.html">TOURMAXXING</a></div><div class="nav-links"><a href="../index.html">ホーム</a><a href="../tours.html">ツアー</a><a href="../index.html#about">私たちについて</a><a href="../index.html#contact">お問い合わせ</a></div><div class="language-selector"><a href="../../tours/mountain.html">🇬🇧 EN</a><span>/</span><a href="mountain.html" class="active">🇯🇵 JP</a></div></nav>
-<header class="destination-hero"><img class="destination-hero-image" src="https://tourmongolia.com/wp-content/uploads/2018/02/mountains.jpg" alt="山岳アドベンチャー"><div class="destination-hero-overlay"></div><div class="destination-hero-content"><span class="destination-eyebrow">モンゴルを発見しよう</span><h1>山岳アドベンチャー</h1><p>モンゴルの山岳地帯には壮大な景色と静かな自然が広がっています。</p><a href="#tour-overview" class="destination-cta">ツアーを見る ↓</a></div><div class="destination-hero-label"><span>TOURMAXXING</span><span>モンゴルの旅へようこそ</span></div></header>
-<main>
-<section class="destination-facts" id="tour-overview"><div class="destination-fact"><span>地域</span><strong>モンゴルの山々</strong></div><div class="destination-fact"><span>見どころ</span><strong>山と自然</strong></div><div class="destination-fact"><span>期間</span><strong>3日間</strong></div><div class="destination-fact"><span>料金</span><strong>300,000₮</strong></div></section>
-<section class="destination-intro"><div class="destination-section-label">01 — 旅の体験</div><div class="destination-intro-grid"><div><h2>モンゴルの雄大な山々を発見しよう。</h2></div><div><p>モンゴルの山岳地帯には壮大な景色と静かな自然が広がっています。</p><p>美しい山の景色を眺めながら、自然の中でゆっくり過ごす旅です。</p></div></div></section>
-<section class="destination-highlights"><div class="destination-section-heading"><div class="destination-section-label">02 — 見どころ</div><h2>訪れる価値のある場所。</h2><p>このツアーで楽しめる自然、文化、風景をご紹介します。詳細は旅程確定後に更新します。</p></div><div class="destination-card-grid"><article class="destination-card"><div class="destination-card-number">01</div><div class="destination-card-content"><span>自然と景観</span><h3>雄大な山々</h3><p>雄大な山々の美しい景色を楽しみ、モンゴルならではの魅力を発見しましょう。</p></div></article>\n<article class="destination-card"><div class="destination-card-number">02</div><div class="destination-card-content"><span>文化と体験</span><h3>自然の中を歩く</h3><p>自然の中を歩くについて学び、旅の中で新しい体験を楽しみましょう。</p></div></article>\n<article class="destination-card"><div class="destination-card-number">03</div><div class="destination-card-content"><span>旅の見どころ</span><h3>静かな山岳地帯</h3><p>静かな山岳地帯を通して、モンゴルの自然や文化を体験しましょう。</p></div></article>\n</div></section>
-<section class="destination-itinerary"><div class="destination-section-label">03 — 旅程</div><h2>3日間の山岳アドベンチャー。</h2><p class="destination-itinerary-intro">詳しい日程、毎日の活動、移動時間、宿泊情報は確定次第このページに掲載します。</p><div class="destination-itinerary-note"><div class="destination-itinerary-icon">✦</div><div><h3>詳細な旅程は近日公開</h3><p>ツアーの日程が確定したら、最新情報をここに追加します。</p></div></div></section>
-<section class="destination-contact"><span class="destination-eyebrow">次の冒険を始めよう</span><h2>モンゴルの旅に出かけませんか？</h2><p>このツアーに興味がありますか？空き状況や最新情報についてお問い合わせください。</p><a href="../index.html#contact" class="destination-cta">お問い合わせ →</a></section>
-</main><footer class="footer"><p>© 2026 TOURMAXXING — モンゴル旅行</p></footer></body></html>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="../index.html">TOURMAXXING</a>
+        </div>
+
+        <div class="nav-links">
+            <a href="../index.html">ホーム</a>
+            <a href="../tours.html">ツアー</a>
+            <a href="../index.html#about">私たちについて</a>
+            <a href="../index.html#contact">お問い合わせ</a>
+        </div>
+
+        <div class="language-selector">
+            <a href="../../tours/mountain.html">🇬🇧 EN</a>
+            <span>/</span>
+            <a href="mountain.html" class="active">🇯🇵 JP</a>
+        </div>
+    </nav>
+
+    <header class="destination-hero">
+        <img
+            class="destination-hero-image"
+            src="../../images/northern/khuvsgul%20lake.jpg"
+            alt="モンゴル北部のフブスグル湖"
+        >
+
+        <div class="destination-hero-overlay"></div>
+
+        <div class="destination-hero-content">
+            <span class="destination-eyebrow">モンゴルを発見しよう</span>
+            <h1>モンゴル北部の<span>冒険</span></h1>
+            <p>
+                美しい湖、広大な自然、独自の文化。
+                モンゴル北部の魅力を発見しましょう。
+            </p>
+            <a href="#tour-overview" class="destination-cta">
+                ツアーを見る ↓
+            </a>
+        </div>
+
+        <div class="destination-hero-label">
+            <span>TOURMAXXING</span>
+            <span>モンゴルの旅へようこそ</span>
+        </div>
+    </header>
+
+    <main>
+        <section class="destination-facts" id="tour-overview">
+            <div class="destination-fact">
+                <span>地域</span>
+                <strong>モンゴル北部</strong>
+            </div>
+
+            <div class="destination-fact">
+                <span>見どころ</span>
+                <strong>湖と自然</strong>
+            </div>
+
+            <div class="destination-fact">
+                <span>旅程</span>
+                <strong>詳細は近日公開</strong>
+            </div>
+
+            <div class="destination-fact">
+                <span>料金</span>
+                <strong>お問い合わせください</strong>
+            </div>
+        </section>
+
+        <section class="destination-intro">
+            <div class="destination-section-label">
+                01 — 旅の体験
+            </div>
+
+            <div class="destination-intro-grid">
+                <div>
+                    <h2>モンゴル北部の大自然を発見しよう。</h2>
+                </div>
+
+                <div>
+                    <p>
+                        モンゴル北部には、澄んだ湖や広大な森林、
+                        雄大な自然が広がっています。
+                        日常を離れ、ゆったりとした時間を楽しみましょう。
+                    </p>
+
+                    <p>
+                        美しい風景を巡りながら、
+                        この地域ならではの自然と文化に触れる旅です。
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="destination-highlights">
+            <div class="destination-section-heading">
+                <div class="destination-section-label">
+                    02 — 見どころ
+                </div>
+
+                <h2>北の大自然と文化に出会う。</h2>
+
+                <p>
+                    美しい湖、広大な風景、伝統的な文化。
+                    モンゴル北部ならではの魅力を紹介します。
+                    実際の訪問先は確定した旅程によって異なる場合があります。
+                </p>
+            </div>
+
+            <div class="destination-card-grid">
+                <article class="destination-card">
+                    <img
+                        class="destination-card-image"
+                        src="../../images/northern/khuvsgul.jpg"
+                        alt="フブスグル湖の自然風景"
+                        loading="lazy"
+                    >
+
+                    <div class="destination-card-number">01</div>
+
+                    <div class="destination-card-content">
+                        <span>湖と自然</span>
+                        <h3>フブスグル湖</h3>
+                        <p>
+                            澄んだ水と美しい自然で知られる湖。
+                            モンゴル北部の壮大な景色を楽しみましょう。
+                        </p>
+                    </div>
+                </article>
+
+                <article class="destination-card">
+                    <img
+                        class="destination-card-image"
+                        src="../../images/northern/steppe.jpg"
+                        alt="モンゴル北部の広大な風景"
+                        loading="lazy"
+                    >
+
+                    <div class="destination-card-number">02</div>
+
+                    <div class="destination-card-content">
+                        <span>広大な風景</span>
+                        <h3>北部の大自然</h3>
+                        <p>
+                            広がる大地と自然の景色を眺めながら、
+                            モンゴルならではの開放感を味わいましょう。
+                        </p>
+                    </div>
+                </article>
+
+                <article class="destination-card">
+                    <img
+                        class="destination-card-image"
+                        src="../../images/northern/tsaatan.jpg"
+                        alt="モンゴル北部のツァータン文化"
+                        loading="lazy"
+                    >
+
+                    <div class="destination-card-number">03</div>
+
+                    <div class="destination-card-content">
+                        <span>文化と伝統</span>
+                        <h3>ツァータンの文化</h3>
+                        <p>
+                            モンゴル北部に暮らす人々の文化や伝統について、
+                            地域の暮らしを尊重しながら学びましょう。
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="destination-itinerary">
+            <div class="destination-section-label">
+                03 — 旅程
+            </div>
+
+            <h2>モンゴル北部を巡る冒険。</h2>
+
+            <p class="destination-itinerary-intro">
+                詳しい日程、毎日の活動、移動時間、宿泊情報は、
+                ツアー内容が確定次第このページに掲載します。
+            </p>
+
+            <div class="destination-itinerary-note">
+                <div class="destination-itinerary-icon">✦</div>
+
+                <div>
+                    <h3>詳細な旅程は近日公開</h3>
+                    <p>
+                        ツアーの日程や料金が確定したら、
+                        最新情報をここに追加します。
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="destination-contact">
+            <span class="destination-eyebrow">
+                次の冒険を始めよう
+            </span>
+
+            <h2>モンゴルの旅に出かけませんか？</h2>
+
+            <p>
+                このツアーに興味がありますか？
+                空き状況や最新情報についてお問い合わせください。
+            </p>
+
+            <a href="../index.html#contact" class="destination-cta">
+                お問い合わせ →
+            </a>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© 2026 TOURMAXXING — モンゴル旅行</p>
+    </footer>
+</body>
+</html>
+```

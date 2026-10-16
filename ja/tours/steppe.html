@@ -1,12 +1,280 @@
+```html
 <!DOCTYPE html>
-<html lang="ja"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>草原の旅 | TOURMAXXING</title><link rel="stylesheet" href="../../style.css"></head>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>モンゴル中央部の旅 | TOURMAXXING</title>
+    <link rel="stylesheet" href="../../style.css">
+
+    <style>
+        .language-selector {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-left: 25px;
+            white-space: nowrap;
+        }
+
+        .language-selector a {
+            color: white;
+            text-decoration: none;
+            font-size: 13px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            transition: color 0.3s ease;
+        }
+
+        .language-selector a:hover,
+        .language-selector a.active {
+            color: #d8b36a;
+        }
+
+        .language-selector span {
+            color: rgba(255, 255, 255, 0.5);
+        }
+
+        .destination-card {
+            overflow: hidden;
+        }
+
+        .destination-card-image {
+            display: block;
+            width: 100%;
+            height: 230px;
+            object-fit: cover;
+        }
+
+        @media (max-width: 650px) {
+            .language-selector {
+                margin-left: 0;
+            }
+
+            .destination-card-image {
+                height: 200px;
+            }
+        }
+    </style>
+</head>
+
 <body>
-<nav class="navbar"><div class="logo"><a href="../index.html">TOURMAXXING</a></div><div class="nav-links"><a href="../index.html">ホーム</a><a href="../tours.html">ツアー</a><a href="../index.html#about">私たちについて</a><a href="../index.html#contact">お問い合わせ</a></div><div class="language-selector"><a href="../../tours/steppe.html">🇬🇧 EN</a><span>/</span><a href="steppe.html" class="active">🇯🇵 JP</a></div></nav>
-<header class="destination-hero"><img class="destination-hero-image" src="https://cdn.britannica.com/37/147337-050-C9A6C53A/Kazakh-camp-Mongolia.jpg" alt="草原の旅"><div class="destination-hero-overlay"></div><div class="destination-hero-content"><span class="destination-eyebrow">モンゴルを発見しよう</span><h1>草原の旅</h1><p>モンゴルの草原には広い空、緑の大地、独自の遊牧民文化が広がっています。</p><a href="#tour-overview" class="destination-cta">ツアーを見る ↓</a></div><div class="destination-hero-label"><span>TOURMAXXING</span><span>モンゴルの旅へようこそ</span></div></header>
-<main>
-<section class="destination-facts" id="tour-overview"><div class="destination-fact"><span>地域</span><strong>モンゴルの草原</strong></div><div class="destination-fact"><span>見どころ</span><strong>自然と遊牧民文化</strong></div><div class="destination-fact"><span>期間</span><strong>4日間</strong></div><div class="destination-fact"><span>料金</span><strong>380,000₮</strong></div></section>
-<section class="destination-intro"><div class="destination-section-label">01 — 旅の体験</div><div class="destination-intro-grid"><div><h2>果てしなく広がる草原を旅しよう。</h2></div><div><p>モンゴルの草原には広い空、緑の大地、独自の遊牧民文化が広がっています。</p><p>草原の風景を眺めながら、モンゴルの伝統的な暮らしや文化に触れましょう。</p></div></div></section>
-<section class="destination-highlights"><div class="destination-section-heading"><div class="destination-section-label">02 — 見どころ</div><h2>訪れる価値のある場所。</h2><p>このツアーで楽しめる自然、文化、風景をご紹介します。詳細は旅程確定後に更新します。</p></div><div class="destination-card-grid"><article class="destination-card"><div class="destination-card-number">01</div><div class="destination-card-content"><span>自然と景観</span><h3>果てしない大地</h3><p>果てしない大地の美しい景色を楽しみ、モンゴルならではの魅力を発見しましょう。</p></div></article>\n<article class="destination-card"><div class="destination-card-number">02</div><div class="destination-card-content"><span>文化と体験</span><h3>伝統的な暮らし</h3><p>伝統的な暮らしについて学び、旅の中で新しい体験を楽しみましょう。</p></div></article>\n<article class="destination-card"><div class="destination-card-number">03</div><div class="destination-card-content"><span>旅の見どころ</span><h3>大空の下で</h3><p>大空の下でを通して、モンゴルの自然や文化を体験しましょう。</p></div></article>\n</div></section>
-<section class="destination-itinerary"><div class="destination-section-label">03 — 旅程</div><h2>4日間の草原の旅。</h2><p class="destination-itinerary-intro">詳しい日程、毎日の活動、移動時間、宿泊情報は確定次第このページに掲載します。</p><div class="destination-itinerary-note"><div class="destination-itinerary-icon">✦</div><div><h3>詳細な旅程は近日公開</h3><p>ツアーの日程が確定したら、最新情報をここに追加します。</p></div></div></section>
-<section class="destination-contact"><span class="destination-eyebrow">次の冒険を始めよう</span><h2>モンゴルの旅に出かけませんか？</h2><p>このツアーに興味がありますか？空き状況や最新情報についてお問い合わせください。</p><a href="../index.html#contact" class="destination-cta">お問い合わせ →</a></section>
-</main><footer class="footer"><p>© 2026 TOURMAXXING — モンゴル旅行</p></footer></body></html>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="../index.html">TOURMAXXING</a>
+        </div>
+
+        <div class="nav-links">
+            <a href="../index.html">ホーム</a>
+            <a href="../tours.html">ツアー</a>
+            <a href="../index.html#about">私たちについて</a>
+            <a href="../index.html#contact">お問い合わせ</a>
+        </div>
+
+        <div class="language-selector">
+            <a href="../../tours/steppe.html">🇬🇧 EN</a>
+            <span>/</span>
+            <a href="steppe.html" class="active">🇯🇵 JP</a>
+        </div>
+    </nav>
+
+    <header class="destination-hero">
+        <img
+            class="destination-hero-image"
+            src="../../images/central/chinggis%20khan%20statue%20full.jpg"
+            alt="モンゴル中央部のチンギス・ハーン騎馬像"
+        >
+
+        <div class="destination-hero-overlay"></div>
+
+        <div class="destination-hero-content">
+            <span class="destination-eyebrow">モンゴルを発見しよう</span>
+            <h1>モンゴル中央部の<span>旅</span></h1>
+            <p>
+                壮大な歴史、広大な風景、モンゴルの文化。
+                モンゴル中央部の魅力を発見しましょう。
+            </p>
+            <a href="#tour-overview" class="destination-cta">
+                ツアーを見る ↓
+            </a>
+        </div>
+
+        <div class="destination-hero-label">
+            <span>TOURMAXXING</span>
+            <span>モンゴルの旅へようこそ</span>
+        </div>
+    </header>
+
+    <main>
+        <section class="destination-facts" id="tour-overview">
+            <div class="destination-fact">
+                <span>地域</span>
+                <strong>モンゴル中央部</strong>
+            </div>
+
+            <div class="destination-fact">
+                <span>見どころ</span>
+                <strong>歴史と自然</strong>
+            </div>
+
+            <div class="destination-fact">
+                <span>旅程</span>
+                <strong>詳細は近日公開</strong>
+            </div>
+
+            <div class="destination-fact">
+                <span>料金</span>
+                <strong>お問い合わせください</strong>
+            </div>
+        </section>
+
+        <section class="destination-intro">
+            <div class="destination-section-label">
+                01 — 旅の体験
+            </div>
+
+            <div class="destination-intro-grid">
+                <div>
+                    <h2>歴史と大自然が出会う場所へ。</h2>
+                </div>
+
+                <div>
+                    <p>
+                        モンゴル中央部では、歴史的な名所や独特な岩の景観、
+                        そしてモンゴルらしい広大な風景を楽しめます。
+                    </p>
+
+                    <p>
+                        歴史と自然の両方に触れながら、
+                        モンゴルの魅力を発見する旅に出かけましょう。
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="destination-highlights">
+            <div class="destination-section-heading">
+                <div class="destination-section-label">
+                    02 — 見どころ
+                </div>
+
+                <h2>訪れてみたい3つの場所。</h2>
+
+                <p>
+                    歴史的な建造物から自然の景観まで、
+                    モンゴル中央部の魅力を紹介します。
+                    実際の訪問先は確定した旅程によって異なる場合があります。
+                </p>
+            </div>
+
+            <div class="destination-card-grid">
+                <article class="destination-card">
+                    <img
+                        class="destination-card-image"
+                        src="../../images/central/chinggis%20khan%20statue%20front.jpg"
+                        alt="チンギス・ハーン騎馬像"
+                        loading="lazy"
+                    >
+
+                    <div class="destination-card-number">01</div>
+
+                    <div class="destination-card-content">
+                        <span>歴史と文化</span>
+                        <h3>チンギス・ハーン騎馬像</h3>
+                        <p>
+                            モンゴルの歴史を象徴する壮大な騎馬像。
+                            国の歴史と文化に触れてみましょう。
+                        </p>
+                    </div>
+                </article>
+
+                <article class="destination-card">
+                    <img
+                        class="destination-card-image"
+                        src="../../images/central/turtle%20rock.jpg"
+                        alt="テレルジの亀岩"
+                        loading="lazy"
+                    >
+
+                    <div class="destination-card-number">02</div>
+
+                    <div class="destination-card-content">
+                        <span>自然と景観</span>
+                        <h3>亀岩（タートルロック）</h3>
+                        <p>
+                            亀のような形をしたユニークな岩と、
+                            周囲に広がる美しい自然を楽しみましょう。
+                        </p>
+                    </div>
+                </article>
+
+                <article class="destination-card">
+                    <img
+                        class="destination-card-image"
+                        src="../../images/central/sukhbaatar%20square%20chinggis.jpg"
+                        alt="ウランバートルのスフバートル広場"
+                        loading="lazy"
+                    >
+
+                    <div class="destination-card-number">03</div>
+
+                    <div class="destination-card-content">
+                        <span>街と文化</span>
+                        <h3>スフバートル広場</h3>
+                        <p>
+                            首都ウランバートルの中心にある広場を訪れ、
+                            モンゴルの現代の街並みや文化を感じましょう。
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="destination-itinerary">
+            <div class="destination-section-label">
+                03 — 旅程
+            </div>
+
+            <h2>モンゴル中央部を巡る旅。</h2>
+
+            <p class="destination-itinerary-intro">
+                詳しい日程、毎日の活動、移動時間、宿泊情報は、
+                ツアー内容が確定次第このページに掲載します。
+            </p>
+
+            <div class="destination-itinerary-note">
+                <div class="destination-itinerary-icon">✦</div>
+
+                <div>
+                    <h3>詳細な旅程は近日公開</h3>
+                    <p>
+                        ツアーの日程や料金が確定したら、
+                        最新情報をここに追加します。
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="destination-contact">
+            <span class="destination-eyebrow">
+                次の冒険を始めよう
+            </span>
+
+            <h2>モンゴルの旅に出かけませんか？</h2>
+
+            <p>
+                このツアーに興味がありますか？
+                空き状況や最新情報についてお問い合わせください。
+            </p>
+
+            <a href="../index.html#contact" class="destination-cta">
+                お問い合わせ →
+            </a>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© 2026 TOURMAXXING — モンゴル旅行</p>
+    </footer>
+</body>
+</html>
+```
