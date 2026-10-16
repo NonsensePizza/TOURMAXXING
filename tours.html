@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,9 +6,137 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Tours | TOURMAXXING</title>
+    <title>Explore Mongolia | TOURMAXXING</title>
+    <meta
+        name="description"
+        content="Explore Mongolia with TOURMAXXING. Discover the Gobi Desert, Central Mongolia, Northern Mongolia, and the mountains and landscapes of Western Mongolia."
+    >
 
     <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* Tours page introduction */
+        .tours-page {
+            padding-top: 120px;
+            padding-bottom: 70px;
+        }
+
+        .tours-intro {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px 35px;
+            text-align: center;
+        }
+
+        .tours-intro h1 {
+            margin: 10px 0 18px;
+            font-size: clamp(36px, 5vw, 58px);
+        }
+
+        .tours-intro p {
+            line-height: 1.8;
+        }
+
+        /* Destination cards */
+        .tour-container {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 30px;
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .tour-card {
+            min-width: 0;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+
+        .tour-card img {
+            display: block;
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        .tour-info {
+            padding: 25px;
+        }
+
+        .tour-info h2 {
+            margin: 10px 0 14px;
+            font-size: 27px;
+        }
+
+        .tour-info p {
+            line-height: 1.8;
+        }
+
+        .tour-location {
+            font-size: 12px;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        .destination-number {
+            display: inline-block;
+            margin-right: 8px;
+            color: #d8b36a;
+        }
+
+        .tour-button {
+            display: inline-block;
+            margin-top: 15px;
+            text-decoration: none;
+        }
+
+        /* Closing message */
+        .destination-note {
+            max-width: 800px;
+            margin: 35px auto 0;
+            padding: 35px 25px;
+            text-align: center;
+        }
+
+        .destination-note h2 {
+            margin-bottom: 12px;
+        }
+
+        .destination-note p {
+            line-height: 1.8;
+        }
+
+        /* Mobile layout */
+        @media (max-width: 650px) {
+            .tours-page {
+                padding-top: 105px;
+            }
+
+            .tour-container {
+                grid-template-columns: 1fr;
+                padding: 15px;
+                gap: 22px;
+            }
+
+            .tour-card img {
+                height: 240px;
+            }
+
+            .tour-info {
+                padding: 20px;
+            }
+
+            .tour-info h2 {
+                font-size: 24px;
+            }
+
+            .destination-note {
+                padding: 25px 20px;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -24,176 +153,190 @@
             <a href="tours.html">Tours</a>
             <a href="index.html#about">About</a>
             <a href="index.html#contact">Contact</a>
+            <a href="ja/tours.html">JP</a>
         </nav>
 
     </header>
 
-
-    <!-- Tours Page -->
+    <!-- Main Tours Page -->
     <main class="tours-page">
 
-        <div class="section-heading">
+        <!-- Page Introduction -->
+        <section class="tours-intro">
 
-            <p class="small-title">EXPLORE MONGOLIA</p>
+            <p class="small-title">YOUR MONGOLIAN ADVENTURE</p>
 
-            <h1>Our Tours</h1>
+            <h1>Explore Our Destinations</h1>
 
             <p>
-                Discover temporary adventures across Mongolia.
-                Real tour information will be added later.
+                From the golden landscapes of the Gobi Desert
+                to the forests and lakes of the north, Mongolia
+                is a land of extraordinary landscapes, rich
+                traditions, and unforgettable adventures.
+                Discover the destination that inspires you.
             </p>
 
-        </div>
+        </section>
 
+        <!-- Destination Cards -->
+        <section class="tour-container" aria-label="Mongolia destinations">
 
-        <!-- Tour Cards -->
-        <div class="tour-container">
-
-
-            <!-- Gobi -->
-            <div class="tour-card">
+            <!-- 1. Gobi Desert -->
+            <article class="tour-card">
 
                 <img
-                    src="https://upload.wikimedia.org/wikipedia/commons/7/79/Gobi_Desert.jpg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original"
-                    alt="elsen tsol baby yeye"
+                    src="images/gobi/gobi.jpg"
+                    alt="Landscape of the Gobi Desert in Mongolia"
+                    loading="lazy"
                 >
 
                 <div class="tour-info">
 
                     <span class="tour-location">
-                        GOBI DESERT
+                        <span class="destination-number">01</span>
+                        SOUTHERN MONGOLIA
                     </span>
 
-                    <h3>Gobi Adventure</h3>
+                    <h2>Gobi Desert</h2>
 
                     <p>
-                        temee memee
+                        Venture into Mongolia's legendary Gobi Desert.
+                        Discover dramatic desert landscapes, camel
+                        journeys, remarkable natural scenery, and
+                        peaceful nights beneath a sky full of stars.
                     </p>
 
-                    <div class="tour-bottom">
-
-                        <span class="tour-duration">
-                            5 Days
-                        </span>
-
-                        <span class="tour-price">
-                            450,000₮
-                        </span>
-
-                    </div>
-
-                    <a
-                        href="tours/gobi.html"
-                        class="tour-button"
-                    >
-                        VIEW TOUR
+                    <a href="tours/gobi.html" class="tour-button">
+                        EXPLORE DESTINATION →
                     </a>
 
                 </div>
+            </article>
 
-            </div>
-
-
-            <!-- Steppe -->
-            <div class="tour-card">
+            <!-- 2. Central Mongolia -->
+            <article class="tour-card">
 
                 <img
-                    src="https://cdn.britannica.com/37/147337-050-C9A6C53A/Kazakh-camp-Mongolia.jpg"
-                    alt="zuger tal psda"
+                    src="images/central/chinggis%20khan%20statue%20full.jpg"
+                    alt="The Chinggis Khaan Statue in Central Mongolia"
+                    loading="lazy"
                 >
 
                 <div class="tour-info">
 
                     <span class="tour-location">
-                        MONGOLIAN STEPPE
+                        <span class="destination-number">02</span>
+                        THE MONGOLIAN HEARTLAND
                     </span>
 
-                    <h3>Steppe Explorer</h3>
+                    <h2>Central Mongolia</h2>
 
                     <p>
-                        mori zori
+                        Experience Mongolia's sweeping grasslands,
+                        traditional nomadic life, and historic
+                        landmarks. Discover the Chinggis Khaan Statue,
+                        striking rock formations, and the open steppe.
                     </p>
 
-                    <div class="tour-bottom">
-
-                        <span class="tour-duration">
-                            4 Days
-                        </span>
-
-                        <span class="tour-price">
-                            380,000₮
-                        </span>
-
-                    </div>
-
-                    <a
-                        href="tours/steppe.html"
-                        class="tour-button"
-                    >
-                        VIEW TOUR
+                    <a href="tours/steppe.html" class="tour-button">
+                        EXPLORE DESTINATION →
                     </a>
 
                 </div>
+            </article>
 
-            </div>
-
-
-            <!-- Mountain -->
-            <div class="tour-card">
+            <!-- 3. Northern Mongolia -->
+            <article class="tour-card">
 
                 <img
-                    src="https://tourmongolia.com/wp-content/uploads/2018/02/mountains.jpg"
-                    alt="uula"
+                    src="images/northern/khuvsgul%20lake.jpg"
+                    alt="Lake Khuvsgul surrounded by Northern Mongolia's wilderness"
+                    loading="lazy"
                 >
 
                 <div class="tour-info">
 
                     <span class="tour-location">
-                        MOUNTAINS
+                        <span class="destination-number">03</span>
+                        LAKES & FORESTS
                     </span>
 
-                    <h3>uulan psda</h3>
+                    <h2>Northern Mongolia</h2>
 
                     <p>
-                        zuger avirval avir psda
+                        Escape into a world of clear lakes, green
+                        forests, and mountain scenery. Explore the
+                        beautiful Lake Khuvsgul region and learn about
+                        the distinctive traditions of northern Mongolia.
                     </p>
 
-                    <div class="tour-bottom">
-
-                        <span class="tour-duration">
-                            3 Days
-                        </span>
-
-                        <span class="tour-price">
-                            300,000₮
-                        </span>
-
-                    </div>
-
-                    <a
-                        href="tours/mountain.html"
-                        class="tour-button"
-                    >
-                        VIEW TOUR
+                    <a href="tours/mountain.html" class="tour-button">
+                        EXPLORE DESTINATION →
                     </a>
 
                 </div>
+            </article>
 
-            </div>
+            <!-- 4. Western Mongolia -->
+            <article class="tour-card">
 
+                <img
+                    src="images/west/land.jpg"
+                    alt="Open landscape in Western Mongolia"
+                    loading="lazy"
+                >
 
-        </div>
+                <div class="tour-info">
+
+                    <span class="tour-location">
+                        <span class="destination-number">04</span>
+                        REMOTE MOUNTAIN LANDSCAPES
+                    </span>
+
+                    <h2>Western Mongolia</h2>
+
+                    <p>
+                        Discover remote landscapes, rugged mountain
+                        scenery, rivers, and quiet valleys. Explore
+                        remarkable places across the west and experience
+                        a different side of Mongolia's natural beauty.
+                    </p>
+
+                    <a href="tours/west.html" class="tour-button">
+                        EXPLORE DESTINATION →
+                    </a>
+
+                </div>
+            </article>
+
+        </section>
+
+        <!-- Closing Message -->
+        <section class="destination-note">
+
+            <p class="small-title">THE JOURNEY IS YOURS</p>
+
+            <h2>Find Your Mongolia</h2>
+
+            <p>
+                Every region has its own landscapes, stories, and
+                traditions. Choose a destination to explore its
+                highlights and start imagining your Mongolian adventure.
+            </p>
+
+            <a href="index.html#contact" class="tour-button">
+                GET IN TOUCH →
+            </a>
+
+        </section>
 
     </main>
 
-
     <!-- Footer -->
     <footer>
-
         <p>
-            © 2026 TOURMAXXING — Temporary Website Prototype
+            © 2026 TOURMAXXING — Explore Mongolia
         </p>
-
     </footer>
 
 </body>
